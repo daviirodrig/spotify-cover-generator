@@ -14,11 +14,9 @@ sp = Spotify(
     )
 )
 
-playlist_id = os.environ['PLAYLIST_ID']
+playlist_id = os.environ["PLAYLIST_ID"]
 
-img_str = gen_img.execute(3000, playlist_id)
-
-
+img_str = gen_img.execute(3060, playlist_id)
 
 res = sp.playlist_upload_cover_image(playlist_id, img_str)
-#print(res)
+# print(res)
